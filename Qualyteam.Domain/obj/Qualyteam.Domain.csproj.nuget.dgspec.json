@@ -102,6 +102,10 @@
               "target": "Package",
               "version": "[10.1.1, )"
             },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            },
             "mediatr": {
               "target": "Package",
               "version": "[9.0.0, )"

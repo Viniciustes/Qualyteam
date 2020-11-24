@@ -1,8 +1,11 @@
 ﻿using System;
+using FluentValidation.Results;
+using MediatR;
+using Qualyteam.Domain.Validations;
 
 namespace Qualyteam.Domain.Models
 {
-    public class IndicadorMensal
+    public class IndicadorMensal : ModelBase, IRequest<IndicadorMensal>
     {
         public IndicadorMensal(string nome, DateTime dataInicio)
         {
@@ -10,19 +13,15 @@ namespace Qualyteam.Domain.Models
             DataInicio = dataInicio;
         }
 
-        public int Id { get; private set; }
-
         public string Nome { get; private set; }
 
         public DateTime DataInicio { get; private set; }
 
+        public override bool IsValid()
+        {
+            ValidationResult = new IndicadorMensalValidation<IndicadorMensal>().Validate(this);
 
-        #region Regra de Negócio
-        public bool IsValidForCreate()
-            => !string.IsNullOrWhiteSpace(Nome) && DataInicio.Date <= DateTime.Now.Date;
-
-        public bool IsValidForUpdate()
-           => Id > 0 && !string.IsNullOrWhiteSpace(Nome) && DataInicio.Date <= DateTime.Now.Date;
-        #endregion
+            return ValidationResult.IsValid;
+        }
     }
 }

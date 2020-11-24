@@ -1,0 +1,9 @@
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\Qualyteam.Test.deps.json
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\Qualyteam.Test.dll
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\Qualyteam.Test.pdb
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\obj\Debug\netcoreapp3.1\Qualyteam.Test.csprojAssemblyReference.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\obj\Debug\netcoreapp3.1\Qualyteam.Test.AssemblyInfoInputs.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\obj\Debug\netcoreapp3.1\Qualyteam.Test.AssemblyInfo.cs
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\obj\Debug\netcoreapp3.1\Qualyteam.Test.csproj.CoreCompileInputs.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\obj\Debug\netcoreapp3.1\Qualyteam.Test.dll
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\obj\Debug\netcoreapp3.1\Qualyteam.Test.pdb

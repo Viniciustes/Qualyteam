@@ -178,6 +178,10 @@
               "target": "Package",
               "version": "[10.1.1, )"
             },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.3.0, )"
+            },
             "mediatr": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -323,6 +327,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "mediatr.extensions.microsoft.dependencyinjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

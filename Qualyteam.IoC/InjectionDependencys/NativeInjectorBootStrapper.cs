@@ -9,6 +9,8 @@ using Qualyteam.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
 using MediatR;
 using Qualyteam.Domain.Notifications;
+using Qualyteam.Domain.Interfaces.Mediators;
+using Qualyteam.Domain.Mediators;
 
 namespace Qualyteam.IoC.InjectionDependencys
 {
@@ -25,6 +27,9 @@ namespace Qualyteam.IoC.InjectionDependencys
 
             // Domain Notifications
             services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
+
+            // Domain Mediators
+            services.AddScoped<IMediatorHandler, MediatorHandler>();
 
             // Infrastructure Repositories
             services.AddScoped<IIndicadorMensalRepository, IndicadorMensalRepository>();

@@ -2,12 +2,15 @@
 
 namespace Qualyteam.Domain.Models
 {
-    public class Coleta
+    public class Coleta : ModelBase
     {
-        public int Id { get; private set; }
-
         public DateTime Data { get; private set; }
 
         public IndicadorMensal IndicadorMensal { get; private set; }
+
+        public override bool IsValid()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

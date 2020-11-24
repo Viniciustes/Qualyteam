@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "+ojFKhCi/ZcizIpRvEiq1r7UKxQ4vnVoNnpXwGutbnlZxmVlo/EfaxYC3cINNa7cGv9Q0iXyPKkBntdVd9klXg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vbbarreira\\source\\repos\\Qualyteam\\Qualyteam.Test\\Qualyteam.Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vbbarreira\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\vbbarreira\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\vbbarreira\\.nuget\\packages\\mstest.testframework\\2.1.2\\mstest.testframework.2.1.2.nupkg.sha512",
+    "C:\\Users\\vbbarreira\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

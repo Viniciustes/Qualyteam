@@ -2,6 +2,7 @@
 using Qualyteam.Application.Interfaces;
 using Qualyteam.Application.ViewModels;
 using Qualyteam.Application.ViewModels.Filters;
+using Qualyteam.Domain.Interfaces.Mediators;
 using Qualyteam.Domain.Interfaces.Repository;
 using Qualyteam.Domain.Models;
 using System.Collections.Generic;
@@ -9,12 +10,12 @@ using System.Threading.Tasks;
 
 namespace Qualyteam.Domain.Services
 {
-    public class IndicadorMensalService : IIndicadorMensalService
+    public class IndicadorMensalService : Service, IIndicadorMensalService
     {
         private readonly IMapper _mapper;
         private readonly IIndicadorMensalRepository _repository;
 
-        public IndicadorMensalService(IMapper mapper, IIndicadorMensalRepository repository)
+        public IndicadorMensalService(IMediatorHandler mediatorHandler, IMapper mapper, IIndicadorMensalRepository repository) : base(mediatorHandler)
         {
             _mapper = mapper;
             _repository = repository;
@@ -24,8 +25,11 @@ namespace Qualyteam.Domain.Services
         {
             var entity = _mapper.Map<IndicadorMensal>(viewModel);
 
-            if (!entity.IsValidForCreate())
-                return null;
+            if (!entity.IsValid())
+            {
+                NotifyValidationErrors(entity);
+                return await Task.FromResult(viewModel);
+            }
 
             await _repository.CreateAsync(entity);
 
@@ -60,8 +64,11 @@ namespace Qualyteam.Domain.Services
         {
             var entity = _mapper.Map<IndicadorMensal>(viewModel);
 
-            if (!entity.IsValidForUpdate())
-                return null;
+            if (!entity.IsValid())
+            {
+                NotifyValidationErrors(entity);
+                return Task.FromResult(viewModel);
+            }
 
             _repository.Update(entity);
 

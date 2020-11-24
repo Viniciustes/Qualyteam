@@ -1,0 +1,14 @@
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\obj\Debug\netcoreapp3.1\Qualyteam.Data.csprojAssemblyReference.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\obj\Debug\netcoreapp3.1\Qualyteam.Data.AssemblyInfoInputs.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\obj\Debug\netcoreapp3.1\Qualyteam.Data.AssemblyInfo.cs
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\obj\Debug\netcoreapp3.1\Qualyteam.Data.csproj.CoreCompileInputs.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\bin\Debug\netcoreapp3.1\Qualyteam.Data.deps.json
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\bin\Debug\netcoreapp3.1\Qualyteam.Data.dll
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\bin\Debug\netcoreapp3.1\Qualyteam.Data.pdb
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\bin\Debug\netcoreapp3.1\Qualyteam.Application.dll
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\bin\Debug\netcoreapp3.1\Qualyteam.Domain.dll
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\bin\Debug\netcoreapp3.1\Qualyteam.Domain.pdb
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\bin\Debug\netcoreapp3.1\Qualyteam.Application.pdb
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\obj\Debug\netcoreapp3.1\Qualyteam.Data.csproj.CopyComplete
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\obj\Debug\netcoreapp3.1\Qualyteam.Data.dll
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Data\obj\Debug\netcoreapp3.1\Qualyteam.Data.pdb

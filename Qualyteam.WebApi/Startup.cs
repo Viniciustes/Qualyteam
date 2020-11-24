@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,6 +21,7 @@ namespace Qualyteam.WebApi
         {
             services.AddCors();
             services.AddControllers();
+            services.AddMediatR(typeof(Startup));
 
             NativeInjectorBootStrapper.RegisterServices(services);
             
