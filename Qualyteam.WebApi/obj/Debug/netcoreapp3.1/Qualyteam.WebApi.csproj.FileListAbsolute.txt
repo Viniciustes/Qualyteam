@@ -1,6 +1,3 @@
-C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.csprojAssemblyReference.cache
-C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.AssemblyInfoInputs.cache
-C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.AssemblyInfo.cs
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -14,6 +11,7 @@ C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\FluentValidation.dll
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -70,6 +68,11 @@ C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\Qualyteam.IoC.pdb
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\Qualyteam.Data.pdb
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\Qualyteam.Domain.pdb
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.csprojAssemblyReference.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.AssemblyInfoInputs.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.AssemblyInfo.cs
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.csproj.CopyComplete
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\staticwebassets\Qualyteam.WebApi.StaticWebAssets.Manifest.cache
@@ -77,6 +80,3 @@ C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.dll
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.pdb
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.genruntimeconfig.cache
-C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.csproj.CoreCompileInputs.cache
-C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.WebApi\obj\Debug\netcoreapp3.1\Qualyteam.WebApi.MvcApplicationPartsAssemblyInfo.cache

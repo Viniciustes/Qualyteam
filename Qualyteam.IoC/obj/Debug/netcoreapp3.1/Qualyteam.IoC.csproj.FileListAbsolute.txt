@@ -1,7 +1,3 @@
-C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.csprojAssemblyReference.cache
-C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.AssemblyInfoInputs.cache
-C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.AssemblyInfo.cs
-C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.csproj.CoreCompileInputs.cache
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\bin\Debug\netcoreapp3.1\Qualyteam.IoC.deps.json
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\bin\Debug\netcoreapp3.1\Qualyteam.IoC.dll
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\bin\Debug\netcoreapp3.1\Qualyteam.IoC.pdb
@@ -11,6 +7,10 @@ C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\bin\Debug\netcoreapp3.1
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\bin\Debug\netcoreapp3.1\Qualyteam.Data.pdb
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\bin\Debug\netcoreapp3.1\Qualyteam.Domain.pdb
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\bin\Debug\netcoreapp3.1\Qualyteam.Application.pdb
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.csprojAssemblyReference.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.AssemblyInfoInputs.cache
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.AssemblyInfo.cs
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.csproj.CoreCompileInputs.cache
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.csproj.CopyComplete
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.dll
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.IoC\obj\Debug\netcoreapp3.1\Qualyteam.IoC.pdb
