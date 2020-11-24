@@ -8,6 +8,7 @@
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="microsoft.net.test.sdk" Version="16.8.0" />
     <PackageReference Include="moq" Version="4.15.1" />
+    <PackageReference Include="mstest.testadapter" Version="2.1.2" />
     <PackageReference Include="MSTest.TestFramework" Version="2.1.2" />
   </ItemGroup>
 

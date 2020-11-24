@@ -185,6 +185,10 @@
             "moq": {
               "target": "Package",
               "version": "[4.15.1, )"
+            },
+            "mstest.testadapter": {
+              "target": "Package",
+              "version": "[2.1.2, )"
             }
           },
           "imports": [

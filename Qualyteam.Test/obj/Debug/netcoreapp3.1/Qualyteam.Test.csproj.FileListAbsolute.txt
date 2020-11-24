@@ -1,5 +1,8 @@
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\testhost.exe
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\testhost.dll
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\Qualyteam.Test.deps.json
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\Qualyteam.Test.runtimeconfig.json
 C:\Users\vbbarreira\source\repos\Qualyteam\Qualyteam.Test\bin\Debug\netcoreapp3.1\Qualyteam.Test.runtimeconfig.dev.json
