@@ -13,21 +13,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Test", "5 - Test", "{EAFB66C6-D39B-47F1-A5D1-467EDFD922CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualyteam.WebApi", "Qualyteam.WebApi\Qualyteam.WebApi.csproj", "{4FA94602-B472-4D67-B144-83763B695D15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qualyteam.WebApi", "Qualyteam.WebApi\Qualyteam.WebApi.csproj", "{4FA94602-B472-4D67-B144-83763B695D15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualyteam.Application", "Qualyteam.Application\Qualyteam.Application.csproj", "{CFD57C8E-0031-467D-A965-6D9B3BD874FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qualyteam.Application", "Qualyteam.Application\Qualyteam.Application.csproj", "{CFD57C8E-0031-467D-A965-6D9B3BD874FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualyteam.Domain", "Qualyteam.Domain\Qualyteam.Domain.csproj", "{12A0459D-4CE7-40F2-9B36-0FD8743516D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qualyteam.Domain", "Qualyteam.Domain\Qualyteam.Domain.csproj", "{12A0459D-4CE7-40F2-9B36-0FD8743516D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{AFD9B545-BA1D-4F89-BB92-531931D0E6B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{E1BD86C8-BB4D-43FA-B37B-17E2C4E65772}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualyteam.Data", "Qualyteam.Data\Qualyteam.Data.csproj", "{40B38DE1-AE3D-402F-B143-1E722BCD2696}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qualyteam.Data", "Qualyteam.Data\Qualyteam.Data.csproj", "{40B38DE1-AE3D-402F-B143-1E722BCD2696}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualyteam.IoC", "Qualyteam.IoC\Qualyteam.IoC.csproj", "{89A42B8A-CE96-4856-9F0B-A1B2D99E3BCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qualyteam.IoC", "Qualyteam.IoC\Qualyteam.IoC.csproj", "{89A42B8A-CE96-4856-9F0B-A1B2D99E3BCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qualyteam.Test", "Qualyteam.Test\Qualyteam.Test.csproj", "{9E350673-A6CF-43CE-95A6-6E697DCE15CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Qualyteam.Test", "Qualyteam.Test\Qualyteam.Test.csproj", "{9E350673-A6CF-43CE-95A6-6E697DCE15CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

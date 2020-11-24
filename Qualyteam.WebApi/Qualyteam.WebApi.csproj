@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Qualyteam.Application\Qualyteam.Application.csproj" />
+    <ProjectReference Include="..\Qualyteam.IoC\Qualyteam.IoC.csproj" />
   </ItemGroup>
 
 
