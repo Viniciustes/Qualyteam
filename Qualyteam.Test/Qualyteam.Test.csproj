@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Qualyteam.Data\Qualyteam.Data.csproj" />
     <ProjectReference Include="..\Qualyteam.Domain\Qualyteam.Domain.csproj" />
   </ItemGroup>
 

@@ -1,7 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Qualyteam.Test.Domain.Services
 {
@@ -11,6 +8,7 @@ namespace Qualyteam.Test.Domain.Services
         [TestMethod]
         public void CreateColetaTestOk()
         {
+            //TODO Implementar testes unitários
         }
     }
 }

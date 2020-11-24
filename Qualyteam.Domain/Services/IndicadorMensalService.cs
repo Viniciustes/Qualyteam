@@ -54,7 +54,7 @@ namespace Qualyteam.Domain.Services
         {
             var entities = await _repository.SearchAsync(x =>
                 filter.Id.HasValue && x.Id == filter.Id
-                || filter.DataInicio.HasValue && x.DataInicio == filter.DataInicio
+                || filter.DataInicio.HasValue && x.DataInicio.Date == filter.DataInicio.Value.Date
                 || !string.IsNullOrWhiteSpace(filter.Nome) && x.Nome.ToUpper() == filter.Nome.ToUpper());
 
             return _mapper.Map<IEnumerable<IndicadorMensalViewModel>>(entities);

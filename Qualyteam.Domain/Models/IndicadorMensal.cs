@@ -7,7 +7,7 @@ namespace Qualyteam.Domain.Models
 {
     public class IndicadorMensal : ModelBase, IRequest<IndicadorMensal>
     {
-        public IndicadorMensal(string nome, DateTime dataInicio)
+        public IndicadorMensal(int id, string nome, DateTime dataInicio) : base(id)
         {
             Nome = nome;
             DataInicio = dataInicio;

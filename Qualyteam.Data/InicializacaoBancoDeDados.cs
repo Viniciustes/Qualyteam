@@ -22,10 +22,10 @@ namespace Qualyteam.Data
 
             var indicadores = new List<IndicadorMensal>
             {
-                new IndicadorMensal("IndicadorMensal_1", DateTime.Now.AddMonths(1)),
-                new IndicadorMensal("IndicadorMensal_2", DateTime.Now.AddMonths(2)),
-                new IndicadorMensal("IndicadorMensal_3", DateTime.Now.AddMonths(3)),
-                new IndicadorMensal("IndicadorMensal_4", DateTime.Now.AddMonths(4))
+                new IndicadorMensal(1, "IndicadorMensal_1", DateTime.Now.AddMonths(1)),
+                new IndicadorMensal(2, "IndicadorMensal_2", DateTime.Now.AddMonths(2)),
+                new IndicadorMensal(3, "IndicadorMensal_3", DateTime.Now.AddMonths(3)),
+                new IndicadorMensal(4, "IndicadorMensal_4", DateTime.Now.AddMonths(4))
             };
 
             context.IndicadorMensal.AddRange(indicadores);
