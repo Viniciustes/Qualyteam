@@ -5,6 +5,10 @@ using Qualyteam.Domain.Interfaces.Repository;
 using Qualyteam.Domain.Services;
 using AutoMapper;
 using System;
+using Qualyteam.Data.Contexts;
+using Microsoft.EntityFrameworkCore;
+using MediatR;
+using Qualyteam.Domain.Notifications;
 
 namespace Qualyteam.IoC.InjectionDependencys
 {
@@ -12,16 +16,22 @@ namespace Qualyteam.IoC.InjectionDependencys
     {
         public static void RegisterServices(IServiceCollection services)
         {
-            // AutoMapper
+            // Domain AutoMapper
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-            // Services
+            // Domain Services
             services.AddScoped<IIndicadorMensalService, IndicadorMensalService>();
             services.AddScoped<IColetaService, ColetaService>();
 
-            // Repositories
+            // Domain Notifications
+            services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
+
+            // Infrastructure Repositories
             services.AddScoped<IIndicadorMensalRepository, IndicadorMensalRepository>();
             services.AddScoped<IColetaRepository, ColetaRepository>();
+
+            // Infrastructure Data
+            services.AddDbContext<QualyTeamContext>(opt => opt.UseInMemoryDatabase("DatabaseConnection"));
         }
     }
 }

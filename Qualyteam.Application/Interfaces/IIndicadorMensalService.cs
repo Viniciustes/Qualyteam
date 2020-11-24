@@ -8,10 +8,10 @@ namespace Qualyteam.Application.Interfaces
     public interface IIndicadorMensalService
     {
         Task<IEnumerable<IndicadorMensalViewModel>> Get();
-        Task<IndicadorMensalViewModel> GetById(long id);
+        Task<IndicadorMensalViewModel> GetById(int id);
         Task<IEnumerable<IndicadorMensalViewModel>> Search(FilterIndicadorMensalViewModel viewModel);
         Task<IndicadorMensalViewModel> Create(IndicadorMensalViewModel viewModel);
         Task<IndicadorMensalViewModel> Update(IndicadorMensalViewModel viewModel);
-        Task<int> Remove(long id);
+        Task<int> Remove(int id);
     }
 }

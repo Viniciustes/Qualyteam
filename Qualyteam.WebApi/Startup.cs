@@ -22,6 +22,8 @@ namespace Qualyteam.WebApi
             services.AddControllers();
 
             NativeInjectorBootStrapper.RegisterServices(services);
+            
+            services.AddMvc();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

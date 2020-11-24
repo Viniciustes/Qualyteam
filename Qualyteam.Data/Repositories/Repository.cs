@@ -35,13 +35,13 @@ namespace Qualyteam.Data.Repositories
         public async Task<IEnumerable<TEntity>> GetAsync()
           => await _context.Set<TEntity>().ToListAsync();
 
-        public async Task<TEntity> GetByIdAsync(long id)
+        public async Task<TEntity> GetByIdAsync(int id)
            => await _context.Set<TEntity>().FindAsync(id);
 
         public async Task<IEnumerable<TEntity>> SearchAsync(Expression<Func<TEntity, bool>> expression)
           => await _context.Set<TEntity>().Where(expression).ToListAsync();
 
-        public async Task<int> RemoveAsync(long id)
+        public async Task<int> RemoveAsync(int id)
         {
             var entity = await GetByIdAsync(id);
 

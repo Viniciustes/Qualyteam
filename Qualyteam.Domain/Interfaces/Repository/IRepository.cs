@@ -8,10 +8,10 @@ namespace Qualyteam.Domain.Interfaces.Repository
     public interface IRepository<TEntity> : IDisposable where TEntity : class
     {
         Task<IEnumerable<TEntity>> GetAsync();
-        Task<TEntity> GetByIdAsync(long id);
+        Task<TEntity> GetByIdAsync(int id);
         Task<IEnumerable<TEntity>> SearchAsync(Expression<Func<TEntity, bool>> expression);
         Task CreateAsync(TEntity entity);
         void Update(TEntity entity);
-        Task<int> RemoveAsync(long id);
+        Task<int> RemoveAsync(int id);
     }
 }

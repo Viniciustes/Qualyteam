@@ -1,13 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Qualyteam.Domain.Notifications;
 
 namespace Qualyteam.WebApi.Controllers
 {
     [Route("api/coleta")]
-    public class ColetaController : Controller
+    public class ColetaController : ApiControllerBase
     {
-        public IActionResult Index()
+        public ColetaController(INotificationHandler<DomainNotification> notifications) : base(notifications)
         {
-            return View();
         }
     }
 }

@@ -39,7 +39,7 @@ namespace Qualyteam.Domain.Services
             return _mapper.Map<IEnumerable<IndicadorMensalViewModel>>(entities);
         }
 
-        public async Task<IndicadorMensalViewModel> GetById(long id)
+        public async Task<IndicadorMensalViewModel> GetById(int id)
         {
             var entity = await _repository.GetByIdAsync(id);
 
@@ -68,7 +68,7 @@ namespace Qualyteam.Domain.Services
             return Task.FromResult(viewModel);
         }
 
-        public async Task<int> Remove(long id)
+        public async Task<int> Remove(int id)
             => await _repository.RemoveAsync(id);
     }
 }

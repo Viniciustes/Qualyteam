@@ -1,21 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Qualyteam.Data.Mappings;
-using System.IO;
+using Qualyteam.Domain.Models;
 
 namespace Qualyteam.Data.Contexts
 {
     public class QualyTeamContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            var config = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
-                .Build();
+        public QualyTeamContext(DbContextOptions dbContextOptions) : base(dbContextOptions) { }
 
-            optionsBuilder.UseSqlServer(config.GetConnectionString("ConnectionStringSqlServer"));
-        }
+        public DbSet<Coleta> Coleta { get; set; }
+
+        public DbSet<IndicadorMensal> IndicadorMensal { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
