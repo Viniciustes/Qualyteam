@@ -77,5 +77,41 @@ namespace Qualyteam.Domain.Messagens {
                 return ResourceManager.GetString("MSG02", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O Id do indicador mensal é inválido e deve ser informado..
+        /// </summary>
+        public static string MSG03 {
+            get {
+                return ResourceManager.GetString("MSG03", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to O valor da coleta é obrigatório e deve ter uma valor válido..
+        /// </summary>
+        public static string MSG04 {
+            get {
+                return ResourceManager.GetString("MSG04", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Já existe uma coleta cadastrada com indicador para o mês informado..
+        /// </summary>
+        public static string MSG05 {
+            get {
+                return ResourceManager.GetString("MSG05", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Coleta não pode ser cadastrada! Data de início do indicador e maior que a data atual..
+        /// </summary>
+        public static string MSG06 {
+            get {
+                return ResourceManager.GetString("MSG06", resourceCulture);
+            }
+        }
     }
 }

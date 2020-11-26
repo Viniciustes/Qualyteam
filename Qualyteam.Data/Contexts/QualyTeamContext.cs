@@ -6,9 +6,11 @@ namespace Qualyteam.Data.Contexts
 {
     public class QualyTeamContext : DbContext
     {
-        public QualyTeamContext(DbContextOptions dbContextOptions) : base(dbContextOptions) { }
+        public QualyTeamContext(DbContextOptions dbContextOptions) : base(dbContextOptions)
+        {
+        }
 
-        public DbSet<Coleta> Coleta { get; set; }
+        public DbSet<Coleta> Coletas { get; set; }
 
         public DbSet<IndicadorMensal> IndicadorMensal { get; set; }
 

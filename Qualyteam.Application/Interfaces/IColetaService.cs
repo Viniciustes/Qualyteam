@@ -10,8 +10,8 @@ namespace Qualyteam.Application.Interfaces
         Task<IEnumerable<ColetaViewModel>> Get();
         Task<ColetaViewModel> GetById(int id);
         Task<IEnumerable<ColetaViewModel>> Search(FilterColetaViewModel viewModel);
-        Task<ColetaViewModel> Create(ColetaViewModel viewModel);
-        Task<ColetaViewModel> Update(ColetaViewModel viewModel);
+        Task<ColetaViewModel> Create(ColetaRequestViewModel viewModel);
+        Task<ColetaViewModel> Update(ColetaRequestViewModel viewModel);
         Task<int> Remove(int id);
     }
 }

@@ -5,6 +5,8 @@ namespace Qualyteam.Domain.Models
 {
     public abstract class ModelBase
     {
+        public ModelBase() { }
+
         protected ModelBase(int id)
         {
             Id = id;
@@ -14,7 +16,5 @@ namespace Qualyteam.Domain.Models
 
         [NotMapped]
         public ValidationResult ValidationResult { get; set; }
-
-        public abstract bool IsValid();
     }
 }

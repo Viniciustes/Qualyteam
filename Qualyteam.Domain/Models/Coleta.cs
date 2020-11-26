@@ -1,22 +1,38 @@
-﻿using System;
+﻿using Qualyteam.Domain.Validations;
+using FluentValidation.Results;
+using System;
+using Qualyteam.Domain.Interfaces.Repository;
 
 namespace Qualyteam.Domain.Models
 {
     public class Coleta : ModelBase
     {
-        public Coleta(int id, DateTime data, IndicadorMensal indicadorMensal) : base(id)
+        // For AutoMapper
+        public Coleta() { }
+
+        public Coleta(int id, decimal valor, IndicadorMensal indicadorMensal) : base(id)
         {
-            Data = data;
+            Valor = valor;
+            DataColeta = DateTime.Now;
             IndicadorMensal = indicadorMensal;
         }
 
-        public DateTime Data { get; private set; }
+        public decimal Valor { get; private set; }
+
+        public DateTime DataColeta { get; set; }
 
         public IndicadorMensal IndicadorMensal { get; private set; }
 
-        public override bool IsValid()
+        public void AddIndicadorMensal(IndicadorMensal indicadorMensal)
         {
-            throw new NotImplementedException();
+            IndicadorMensal = indicadorMensal;
+        }
+
+        public bool IsValid(IColetaRepository repository)
+        {
+            ValidationResult = new ColetaValidation<Coleta>(repository).Validate(this);
+
+            return ValidationResult.IsValid;
         }
     }
 }

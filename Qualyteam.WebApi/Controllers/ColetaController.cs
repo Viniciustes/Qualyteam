@@ -33,11 +33,11 @@ namespace Qualyteam.WebApi.Controllers
              => Response(await _service.Search(viewModel));
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] ColetaViewModel viewModel)
+        public async Task<IActionResult> Post([FromBody] ColetaRequestViewModel viewModel)
              => Response(await _service.Create(viewModel));
 
         [HttpPut]
-        public async Task<IActionResult> Put([FromBody] ColetaViewModel viewModel)
+        public async Task<IActionResult> Put([FromBody] ColetaRequestViewModel viewModel)
              => Response(await _service.Update(viewModel));
 
         [HttpDelete]

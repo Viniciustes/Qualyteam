@@ -14,11 +14,9 @@ namespace Qualyteam.Data.Mappings
 
             builder.Property(x => x.Id);
 
-            builder.Property(x => x.Data)
-               .HasColumnType("Date")
-               .IsRequired();
-
-            //TODO Implementar mapeamento Indicador Mensal
+            builder.HasOne(e => e.IndicadorMensal)
+                .WithMany(ep => ep.Coletas)
+                .IsRequired();
         }
     }
 }

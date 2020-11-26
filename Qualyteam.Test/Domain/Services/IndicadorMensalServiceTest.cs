@@ -23,16 +23,16 @@ namespace Qualyteam.Test.Domain.Services
 
         private Mock<IMapper> _mockMapper;
         private Mock<IMediatorHandler> _mockMediatorHandler;
-        private Mock<IIndicadorMensalRepository> _mockRepository;
+        private Mock<IIndicadorMensalRepository> _mockIndicadorMensalRepository;
 
         [TestInitialize]
         public void Setup()
         {
             _mockMapper = new Mock<IMapper>();
             _mockMediatorHandler = new Mock<IMediatorHandler>();
-            _mockRepository = new Mock<IIndicadorMensalRepository>();
+            _mockIndicadorMensalRepository = new Mock<IIndicadorMensalRepository>();
 
-            _service = new IndicadorMensalService(_mockMediatorHandler.Object, _mockMapper.Object, _mockRepository.Object);
+            _service = new IndicadorMensalService(_mockMediatorHandler.Object, _mockMapper.Object, _mockIndicadorMensalRepository.Object);
         }
 
         [TestMethod]
@@ -60,7 +60,7 @@ namespace Qualyteam.Test.Domain.Services
                 new IndicadorMensalViewModel { Id = 3, Nome = "Team", DataInicio = DateTime.Now.Date.AddDays(-1) }
             };
 
-            _mockRepository.Setup(m => m.SearchAsync(It.IsAny<Expression<Func<IndicadorMensal, bool>>>()))
+            _mockIndicadorMensalRepository.Setup(m => m.SearchAsync(It.IsAny<Expression<Func<IndicadorMensal, bool>>>()))
                 .Returns(Task.FromResult(listModels));
 
             _mockMapper.Setup(x => x.Map<IEnumerable<IndicadorMensalViewModel>>(listModels))

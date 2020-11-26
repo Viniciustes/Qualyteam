@@ -11,7 +11,7 @@ namespace Qualyteam.Data.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        private readonly QualyTeamContext _context;
+        public readonly QualyTeamContext _context;
 
         public Repository(QualyTeamContext context)
         {
@@ -40,6 +40,9 @@ namespace Qualyteam.Data.Repositories
 
         public async Task<IEnumerable<TEntity>> SearchAsync(Expression<Func<TEntity, bool>> expression)
           => await _context.Set<TEntity>().Where(expression).ToListAsync();
+
+        public bool FindAny(Expression<Func<TEntity, bool>> expression)
+           => _context.Set<TEntity>().Any(expression);
 
         public async Task<int> RemoveAsync(int id)
         {
