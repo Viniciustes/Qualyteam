@@ -10,16 +10,16 @@ namespace Qualyteam.Domain.Models
         // For AutoMapper
         public Coleta() { }
 
-        public Coleta(int id, decimal valor, IndicadorMensal indicadorMensal) : base(id)
+        public Coleta(int id, decimal valor, DateTime dataColeta, IndicadorMensal indicadorMensal) : base(id)
         {
             Valor = valor;
-            DataColeta = DateTime.Now;
+            DataColeta = dataColeta;
             IndicadorMensal = indicadorMensal;
         }
 
         public decimal Valor { get; private set; }
 
-        public DateTime DataColeta { get; set; }
+        public DateTime? DataColeta { get; set; }
 
         public IndicadorMensal IndicadorMensal { get; private set; }
 

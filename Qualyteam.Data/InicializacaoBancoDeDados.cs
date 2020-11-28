@@ -31,11 +31,11 @@ namespace Qualyteam.Data
 
             var coletas = new List<Coleta>
             {
-                new Coleta(1, 1.5m, indicadores.Where(x=> x.Id == 5).First()),
-                new Coleta(2, 2.4m, indicadores.Where(x=> x.Id == 4).First()),
-                new Coleta(3, 3.3m, indicadores.Where(x=> x.Id == 3).First()),
-                new Coleta(4, 4.2m, indicadores.Where(x=> x.Id == 2).First()),
-                new Coleta(5, 5.1m, indicadores.Where(x=> x.Id == 1).First())
+                new Coleta(1, 1.5m, DateTime.Now.AddMonths(-1), indicadores.Where(x=> x.Id == 5).First()),
+                new Coleta(2, 2.4m, DateTime.Now.AddMonths(-2), indicadores.Where(x=> x.Id == 4).First()),
+                new Coleta(3, 3.3m, DateTime.Now.AddMonths(-3), indicadores.Where(x=> x.Id == 3).First()),
+                new Coleta(4, 4.2m, DateTime.Now.AddMonths(-4), indicadores.Where(x=> x.Id == 2).First()),
+                new Coleta(5, 5.1m, DateTime.Now.AddMonths(-5), indicadores.Where(x=> x.Id == 1).First())
             };
 
             context.IndicadorMensal.AddRange(indicadores);

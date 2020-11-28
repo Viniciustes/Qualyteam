@@ -126,7 +126,7 @@
     <comment>Mensagem de erro para data início maior que a atual.</comment>
   </data>
   <data name="MSG03" xml:space="preserve">
-    <value>O Id do indicador mensal é inválido e deve ser informado.</value>
+    <value>O indicador mensal é inválido e deve ser informado.</value>
     <comment>Mensagem de erro para Id indicador mensal que deve ser informado.</comment>
   </data>
   <data name="MSG04" xml:space="preserve">
@@ -138,7 +138,15 @@
     <comment>Mensagem de erro para cadastro de um indicador que já tem uma coleta no mesmo mês.</comment>
   </data>
   <data name="MSG06" xml:space="preserve">
-    <value>Coleta não pode ser cadastrada! Data de início do indicador e maior que a data atual.</value>
+    <value>Coleta não pode ser cadastrada! Data de início do indicador e maior que a data da coleta.</value>
     <comment>Mensagem de erro para cadastro de coleta inferior a data de início do indicador.</comment>
+  </data>
+  <data name="MSG07" xml:space="preserve">
+    <value>A data de início é obrigatória.</value>
+    <comment>Mensagem de erro para data de início que é obrigatória.</comment>
+  </data>
+  <data name="MSG08" xml:space="preserve">
+    <value>A data da coleta é obrigatória.</value>
+    <comment>Mensagem de erro para data da coleta que é obrigatória;</comment>
   </data>
 </root>

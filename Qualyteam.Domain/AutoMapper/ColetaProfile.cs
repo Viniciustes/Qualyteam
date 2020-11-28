@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Qualyteam.Application.ViewModels;
 using Qualyteam.Domain.Models;
-using System;
 
 namespace Qualyteam.Domain.AutoMapper
 {
@@ -13,7 +12,7 @@ namespace Qualyteam.Domain.AutoMapper
             CreateMap<ColetaRequestViewModel, Coleta>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
                 .ForMember(dest => dest.Valor, opt => opt.MapFrom(src => src.Valor))
-                .ForMember(dest => dest.DataColeta, opt => opt.MapFrom(src => DateTime.Now))
+                .ForMember(dest => dest.DataColeta, opt => opt.MapFrom(src => src.DataColeta))
                 .ForPath(dest => dest.IndicadorMensal.Id, opt => opt.MapFrom(src => src.IdIndicadorMensal));
 
             //Model to ViewModel

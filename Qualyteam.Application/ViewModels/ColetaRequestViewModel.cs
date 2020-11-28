@@ -1,4 +1,6 @@
-﻿namespace Qualyteam.Application.ViewModels
+﻿using System;
+
+namespace Qualyteam.Application.ViewModels
 {
     public class ColetaRequestViewModel
     {
@@ -7,5 +9,7 @@
         public decimal Valor { get; set; }
 
         public int IdIndicadorMensal { get; set; }
+
+        public DateTime? DataColeta { get; set; }
     }
 }

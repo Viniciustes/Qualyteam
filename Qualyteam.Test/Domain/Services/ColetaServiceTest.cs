@@ -43,8 +43,8 @@ namespace Qualyteam.Test.Domain.Services
 
             IEnumerable<Coleta> listColeta = new List<Coleta>
             {
-                new Coleta(1, 10, indicadorMensal),
-                new Coleta(2, 20, indicadorMensal)
+                new Coleta(1, 10, DateTime.Now.AddMonths(-1), indicadorMensal),
+                new Coleta(2, 20, DateTime.Now.AddMonths(-2), indicadorMensal)
             };
 
             IEnumerable<ColetaViewModel> listColetaViewModel = new List<ColetaViewModel>
@@ -92,7 +92,7 @@ namespace Qualyteam.Test.Domain.Services
             // Arrange
             var indicadorMensal = new IndicadorMensal(1, "Qualyteam", DateTime.Now);
 
-            var coleta = new Coleta(2, 20, indicadorMensal);
+            var coleta = new Coleta(2, 20, DateTime.Now.AddMonths(-2), indicadorMensal);
 
             var coletaViewModel = new ColetaViewModel
             {
@@ -145,7 +145,7 @@ namespace Qualyteam.Test.Domain.Services
                 }
             };
 
-            var coleta = new Coleta(0, 55.5m, indicadorMensal);
+            var coleta = new Coleta(0, 55.5m, DateTime.Now, indicadorMensal);
 
             _mockMapper.Setup(x => x.Map<Coleta>(coletaRequestViewModel))
               .Returns((ColetaRequestViewModel source) => coleta);
@@ -177,7 +177,7 @@ namespace Qualyteam.Test.Domain.Services
 
             var indicadorMensal = new IndicadorMensal(1, "Qualyteam", DateTime.Now.AddDays(1));
 
-            var coleta = new Coleta(0, 55.5m, indicadorMensal);
+            var coleta = new Coleta(0, 55.5m, DateTime.Now, indicadorMensal);
 
             _mockMapper.Setup(x => x.Map<Coleta>(coletaRequestViewModel))
               .Returns((ColetaRequestViewModel source) => coleta);
@@ -205,13 +205,13 @@ namespace Qualyteam.Test.Domain.Services
                 IdIndicadorMensal = 1
             };
 
-            var indicadorMensal = new IndicadorMensal(1, "Qualyteam", DateTime.Now.AddDays(-1));
+            var indicadorMensal = new IndicadorMensal(1, "Qualyteam", DateTime.Now);
 
             var coletaViewModel = new ColetaViewModel
             {
                 Id = 1,
                 Valor = 55.5m,
-                DataColeta = DateTime.Now,
+                DataColeta = DateTime.Now.AddDays(1),
                 IndicadorMensal = new IndicadorMensalViewModel
                 {
                     Id = indicadorMensal.Id,
@@ -220,7 +220,7 @@ namespace Qualyteam.Test.Domain.Services
                 }
             };
 
-            var coleta = new Coleta(1, 55.5m, indicadorMensal);
+            var coleta = new Coleta(1, 55.5m, DateTime.Now.AddDays(1), indicadorMensal);
 
             _mockMapper.Setup(x => x.Map<Coleta>(coletaRequestViewModel))
               .Returns((ColetaRequestViewModel source) => coleta);
@@ -252,7 +252,7 @@ namespace Qualyteam.Test.Domain.Services
 
             var indicadorMensal = new IndicadorMensal(1, "Qualyteam", DateTime.Now.AddDays(1));
 
-            var coleta = new Coleta(1, 55.5m, indicadorMensal);
+            var coleta = new Coleta(1, 55.5m, DateTime.Now.AddMonths(-1), indicadorMensal);
 
             _mockMapper.Setup(x => x.Map<Coleta>(coletaRequestViewModel))
               .Returns((ColetaRequestViewModel source) => coleta);

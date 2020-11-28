@@ -11,6 +11,7 @@ namespace Qualyteam.Domain.Validations
         {
             ValidarNome();
             ValidarDataInicio();
+            ValidarDataInicioObrigatorio();
         }
 
         protected void ValidarNome()
@@ -20,11 +21,26 @@ namespace Qualyteam.Domain.Validations
                 .WithMessage(Messages.MSG01);
         }
 
+        protected void ValidarDataInicioObrigatorio()
+        {
+            RuleFor(x => x.DataInicio)
+                .Must(DataEhValida)
+                .WithMessage(Messages.MSG07);
+        }
+
         protected void ValidarDataInicio()
         {
             RuleFor(x => x.DataInicio)
                 .LessThanOrEqualTo(DateTime.Now.Date)
                 .WithMessage(Messages.MSG02);
+        }
+
+        private bool DataEhValida(DateTime? date)
+        {
+            if (date == default(DateTime) || !date.HasValue)
+                return false;
+
+            return true;
         }
     }
 }

@@ -16,6 +16,7 @@ namespace Qualyteam.Domain.Validations
 
             ValidarValor();
             ValidarIdIndicadorMensal();
+            ValidarDataColetaObrigatorio();
             ValidarExisteColetaParaMesmoMes();
             ValidarColetaDataAnteriorDataInicioIndicador();
         }
@@ -29,9 +30,16 @@ namespace Qualyteam.Domain.Validations
 
         protected void ValidarIdIndicadorMensal()
         {
-            RuleFor(x => x.IndicadorMensal.Id)
-                 .GreaterThan(0)
+            RuleFor(x => x.IndicadorMensal)
+                 .Must(IndicadorMensalEhValido)
                  .WithMessage(Messages.MSG03);
+        }
+
+        protected void ValidarDataColetaObrigatorio()
+        {
+            RuleFor(x => x.DataColeta)
+                .Must(DataEhValida)
+                .WithMessage(Messages.MSG08);
         }
 
         /// <summary>
@@ -39,9 +47,12 @@ namespace Qualyteam.Domain.Validations
         /// </summary>
         protected void ValidarColetaDataAnteriorDataInicioIndicador()
         {
-            RuleFor(x => x.IndicadorMensal.DataInicio.Date)
-               .LessThanOrEqualTo(x => x.DataColeta.Date)
-               .WithMessage(Messages.MSG06);
+            When(x => x.DataColeta.HasValue, () =>
+            {
+                RuleFor(x => x.IndicadorMensal.DataInicio.Value.Date)
+                    .LessThanOrEqualTo(x => x.DataColeta.Value.Date)
+                    .WithMessage(Messages.MSG06);
+            });
         }
 
         /// <summary>
@@ -49,28 +60,44 @@ namespace Qualyteam.Domain.Validations
         /// </summary>
         protected void ValidarExisteColetaParaMesmoMes()
         {
-            RuleFor(p => p)
-                .Must(ValidarSeDuplicado())
-                .When(x => x.IndicadorMensal.Id > 0)
-                .WithMessage(Messages.MSG05);
+            When(x => x.DataColeta.HasValue && x.IndicadorMensal != null && x.IndicadorMensal.Id > 0, () =>
+            {
+                RuleFor(p => p)
+               .Must(ValidarSeDuplicado())
+               .When(x => x.IndicadorMensal.Id > 0)
+               .WithMessage(Messages.MSG05);
+            });
         }
 
         private Func<Coleta, bool> ValidarSeDuplicado()
         {
             return (entity) =>
             {
-                if (entity.IndicadorMensal.Id == 0)
-                    return false;
-
                 if (entity.Id != 0)
                 {
-                    return !_repository.FindAny(x => x.Id != entity.Id && x.IndicadorMensal.Id == entity.IndicadorMensal.Id && x.DataColeta.Month == DateTime.Now.Month);
+                    return !_repository.FindAny(x => x.Id != entity.Id && x.IndicadorMensal.Id == entity.IndicadorMensal.Id && x.DataColeta.Value.Month == DateTime.Now.Month);
                 }
                 else
                 {
-                    return !_repository.FindAny(x => x.IndicadorMensal.Id == entity.IndicadorMensal.Id && x.DataColeta.Month == DateTime.Now.Month);
+                    return !_repository.FindAny(x => x.IndicadorMensal.Id == entity.IndicadorMensal.Id && x.DataColeta.Value.Month == DateTime.Now.Month);
                 }
             };
+        }
+
+        private bool DataEhValida(DateTime? date)
+        {
+            if (date == default(DateTime) || !date.HasValue)
+                return false;
+
+            return true;
+        }
+
+        private bool IndicadorMensalEhValido(IndicadorMensal indicadorMensal)
+        {
+            if (indicadorMensal == null || indicadorMensal.Id <= 0)
+                return false;
+
+            return true;
         }
     }
 }

@@ -79,7 +79,7 @@ namespace Qualyteam.Domain.Messagens {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to O Id do indicador mensal é inválido e deve ser informado..
+        ///   Looks up a localized string similar to O indicador mensal é inválido e deve ser informado..
         /// </summary>
         public static string MSG03 {
             get {
@@ -106,11 +106,29 @@ namespace Qualyteam.Domain.Messagens {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coleta não pode ser cadastrada! Data de início do indicador e maior que a data atual..
+        ///   Looks up a localized string similar to Coleta não pode ser cadastrada! Data de início do indicador e maior que a data da coleta..
         /// </summary>
         public static string MSG06 {
             get {
                 return ResourceManager.GetString("MSG06", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A data de início é obrigatória..
+        /// </summary>
+        public static string MSG07 {
+            get {
+                return ResourceManager.GetString("MSG07", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A data da coleta é obrigatória..
+        /// </summary>
+        public static string MSG08 {
+            get {
+                return ResourceManager.GetString("MSG08", resourceCulture);
             }
         }
     }

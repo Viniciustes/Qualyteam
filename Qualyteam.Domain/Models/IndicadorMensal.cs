@@ -19,7 +19,7 @@ namespace Qualyteam.Domain.Models
 
         public string Nome { get; private set; }
 
-        public DateTime DataInicio { get; private set; }
+        public DateTime? DataInicio { get; private set; }
 
         public ICollection<Coleta> Coletas { get; private set; }
 

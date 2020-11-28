@@ -6,6 +6,7 @@ using Qualyteam.Domain.Interfaces.Mediators;
 using Qualyteam.Domain.Interfaces.Repository;
 using Qualyteam.Domain.Models;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Qualyteam.Domain.Services
@@ -27,7 +28,7 @@ namespace Qualyteam.Domain.Services
         {
             var entities = await _repository.GetAsync();
 
-            return _mapper.Map<IEnumerable<ColetaViewModel>>(entities);
+            return _mapper.Map<IEnumerable<ColetaViewModel>>(entities.OrderBy(x => x.DataColeta.Value.Date));
         }
 
         public async Task<ColetaViewModel> GetById(int id)
@@ -39,9 +40,12 @@ namespace Qualyteam.Domain.Services
 
         public async Task<IEnumerable<ColetaViewModel>> Search(FilterColetaViewModel viewModel)
         {
-            var entities = await _repository.SearchAsync(x => x.IndicadorMensal.DataInicio.Date >= viewModel.DataIntervaloInicio.Date && x.IndicadorMensal.DataInicio.Date <= viewModel.DataIntervaloFim.Date);
+            if (viewModel == null)
+                return await Get();
 
-            return _mapper.Map<IEnumerable<ColetaViewModel>>(entities);
+            var entities = await _repository.SearchAsync(x => x.IndicadorMensal.DataInicio.Value.Date >= viewModel.DataIntervaloInicio.Date &&  x.IndicadorMensal.DataInicio.Value.Date <= viewModel.DataIntervaloFim.Date);
+
+            return _mapper.Map<IEnumerable<ColetaViewModel>>(entities.OrderBy(x => x.DataColeta.Value.Date));
         }
 
         public async Task<ColetaViewModel> Create(ColetaRequestViewModel viewModel)
