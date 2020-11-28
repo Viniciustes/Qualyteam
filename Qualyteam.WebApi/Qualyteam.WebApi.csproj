@@ -5,7 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="mediatr.extensions.microsoft.dependencyinjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Qualyteam.Application\Qualyteam.Application.csproj" />
+    <ProjectReference Include="..\Qualyteam.IoC\Qualyteam.IoC.csproj" />
   </ItemGroup>
 
 

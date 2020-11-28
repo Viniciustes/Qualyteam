@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "wUXF4cjFBRuxDyjkH1HP32pEGMmIVN8zszyvsgdiDm9nImm1/cBgWdc3W4ZDA3Czc6B2Dm1nx1k9K5rQXtTL4w==",
+  "dgSpecHash": "mPc6gD20sqIF/86DeBz61daaLZTEQqMd4lC0VzGdrbsmOCMl+UFnanerlAFelrzpBm5RnZ0csgyEMTQ0V4D7hw==",
   "success": true,
   "projectFilePath": "C:\\Users\\vbbarreira\\source\\repos\\Qualyteam\\Qualyteam.Domain\\Qualyteam.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vbbarreira\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\vbbarreira\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
+    "C:\\Users\\vbbarreira\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\vbbarreira\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\vbbarreira\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
